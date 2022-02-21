@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            This is the Example Of getElementById
+        </title>
+
+        <script>
+            function Cube(){
+                var number = document.getElementById("number").value;
+                alert("the Cube of The Number"+ (number*number*number));
+            }
+        </script>
+
+    </head>
+    <body>
+        <form>
+            Enter the Number Here :
+            <input type="text" id="number" name="number">
+            <input type="button" value="Cube" onclick="Cube()">
+        </form>
+    </body>
+</html>
