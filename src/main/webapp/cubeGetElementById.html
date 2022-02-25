@@ -9,6 +9,11 @@
                 var number = document.getElementById("number").value;
                 alert("the Cube of The Number"+ (number*number*number));
             }
+
+            function Square(){
+                var number1 = document.getElementById("number1").value;
+                alert("The Square Of Number is : " + (number1*number1));
+            }
         </script>
 
     </head>
@@ -17,6 +22,12 @@
             Enter the Number Here :
             <input type="text" id="number" name="number">
             <input type="button" value="Cube" onclick="Cube()">
+        </form>
+
+        <form>
+            Enter the Number Again Here :
+            <input type="text" id="number1" name="number1">
+            <input type="button" value="Square" onclick="Square()">
         </form>
     </body>
 </html>

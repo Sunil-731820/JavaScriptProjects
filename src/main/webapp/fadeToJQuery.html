@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>
+	$(document).ready(function() {
+		$("button").click(function(){
+			$("#div1").fadeTo("slow",0.3);
+			$("#div2").fadeTo("slow",0.4);
+			$("#div3").fadeTo("slow",0.5);
+			});
+	});
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>This is the example of fadeTo  in JQuery</p>
+<div id="div1" style="width: 80px;height: 80px;background-color: red"></div><hr>
+<div id="div2" style="width: 80px;height: 80px;background-color: yellow"></div><hr>
+<div id="div3" style="width: 80px;height: 80px;background-color: green"></div><hr>
+<button>click to see the fadeTo effects</button>
+</body>
+</html>
