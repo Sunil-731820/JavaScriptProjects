@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="login_style.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function check_login()
+{
+ var name=$("#user_name").val();
+ var pass=$("#password").val();
+ if(name=="talkerscode" && pass=="talkerscode")
+ {
+  alert("Successfully Logged In");
+  $("#user_name").val("");
+  $("#password").val("");
+ }
+ else
+ {
+  $("#login_form").removeClass('shake_effect');  
+  setTimeout(function()
+  {
+   $("#login_form").addClass('shake_effect')
+  },1);  
+ }
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body
+{
+ text-align:center;
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:helvetica;
+ background-color:#819FF7;
+}
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#login_form
+{
+ background-color:white;
+ width:300px;
+ margin-left:330px;
+ box-shadow:0px 0px 10px 0px #2E64FE;
+ padding:15px;
+}
+#login_form #login_label
+{
+ font-size:25px;
+ font-weight:bold;
+ color:#5882FA;
+ margin:0px;
+}
+#login_form p
+{
+ margin:0px;
+ margin-top:20px;
+ color:#819FF7;
+ font-size:17px;
+ font-weight:bold;
+}
+#login_form input[type="text"],input[type="password"]
+{
+ margin-top:5px;
+ width:250px;
+ height:35px;
+ padding-left:5px;
+}
+#login_form input[type="button"]
+{
+ background-color:#819FF7;
+ border:none;
+ border-bottom:7px solid #5882FA;
+ width:250px;
+ height:45px;
+ border-radius:2px;
+ color:white;
+ font-weight:bold;
+}
+.shake_effect
+{
+ animation: shake 1s ;
+}
+@keyframes shake 
+{
+ 10%, 90% 
+ {
+  transform: translate3d(-1px, 0, 0);
+ }
+  
+ 20%, 80% 
+ {
+  transform: translate3d(2px, 0, 0);
+ }
+
+ 30%, 50%, 70% 
+ {
+  transform: translate3d(-4px, 0, 0);
+ }
+
+ 40%, 60% 
+ {
+  transform: translate3d(4px, 0, 0);
+ }
+}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+
+<div id="login_form" class="no_effect">
+ <p id="login_label">LOGIN FORM</p>
+ <p>USERNAME</p>
+ <input type="text" id="user_name">
+ <p>PASSWORD</p>
+ <input type="password" id="password">
+ <p>UserName : talkerscode Password : talkerscode</p>
+ <p><input type="button" value="LOGIN" onclick="check_login();"></p>
+</div>
+
+</div>
+</body>
+</html>
