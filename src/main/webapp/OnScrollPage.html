@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>  
+#para{  
+width: 250px;  
+height: 150px;  
+overflow: scroll;  
+border: 1px solid red;  
+font-size: 25px;  
+}  
+.container{
+border-radius: 12px;
+background-color:  "aqua";
+}
+</style>  
+</head>
+<body>
+<div class = "container">
+<h1> Hello world :):) </h1>  
+<h2> Scroll the bordered text to see the effect. </h2>  
+<p> This is an example of using the <b> on scroll </b> attribute. </p>  
+<p id = "para" onscroll = "fun()"> Hi, Welcome to the javaTpoint.com. This site is developed so that students may learn computer science related technologies easily. The javaTpoint.com is always providing an easy and in-depth tutorial on various technologies. No one is perfect in this world, and nothing is eternally best. But we can try to be better. </p>  
+</div>
+<script>  
+function fun() {  
+document.getElementById("para").style.color = "black";  
+document.getElementById("para").style.background = "white";  
+}  
+</script>  
+</body>
+</html>
